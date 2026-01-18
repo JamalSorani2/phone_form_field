@@ -79,6 +79,7 @@ class PhoneFormField extends FormField<PhoneNumber> {
   final Function(PhoneNumber)? onSubmitted;
   final AppPrivateCommandCallback? onAppPrivateCommand;
   final Function(PointerDownEvent)? onTapOutside;
+  final Function(PointerUpEvent)? onTapUpOutside;
   final Function()? onTap;
   final double cursorWidth;
   final double? cursorHeight;
@@ -140,6 +141,7 @@ class PhoneFormField extends FormField<PhoneNumber> {
     this.onSubmitted,
     this.onAppPrivateCommand,
     this.onTapOutside,
+    this.onTapUpOutside,
     this.inputFormatters,
     this.cursorWidth = 2.0,
     this.cursorHeight,

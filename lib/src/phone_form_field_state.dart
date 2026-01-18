@@ -141,6 +141,7 @@ class PhoneFormFieldState extends FormFieldState<PhoneNumber> {
         cursorRadius: widget.cursorRadius,
         cursorColor: widget.cursorColor,
         onTapOutside: widget.onTapOutside,
+        onTapUpOutside: widget.onTapUpOutside,
         onTap: widget.onTap,
         selectionHeightStyle: widget.selectionHeightStyle,
         selectionWidthStyle: widget.selectionWidthStyle,
