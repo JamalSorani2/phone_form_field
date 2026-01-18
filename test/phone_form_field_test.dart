@@ -15,6 +15,7 @@ void main() {
       Function(PhoneNumber?)? onChanged,
       Function(PhoneNumber?)? onSaved,
       Function(PointerDownEvent)? onTapOutside,
+      Function()? onTap,
       PhoneNumber? initialValue,
       PhoneController? controller,
       FocusNode? focusNode,
@@ -38,6 +39,7 @@ void main() {
                   onChanged: onChanged,
                   onSaved: onSaved,
                   onTapOutside: onTapOutside,
+                  onTap: onTap,
                   countryButtonStyle: CountryButtonStyle(
                     showFlag: showFlagInInput,
                     showDialCode: showDialCode,

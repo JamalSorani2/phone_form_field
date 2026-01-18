@@ -79,6 +79,7 @@ class PhoneFormField extends FormField<PhoneNumber> {
   final Function(PhoneNumber)? onSubmitted;
   final AppPrivateCommandCallback? onAppPrivateCommand;
   final Function(PointerDownEvent)? onTapOutside;
+  final Function()? onTap;
   final double cursorWidth;
   final double? cursorHeight;
   final Radius? cursorRadius;
@@ -109,6 +110,7 @@ class PhoneFormField extends FormField<PhoneNumber> {
     this.isCountrySelectionEnabled = true,
     this.isCountryButtonPersistent = true,
     this.countryButtonStyle = const CountryButtonStyle(),
+    this.onTap,
     // form field inputs
     super.validator,
     PhoneNumber? initialValue,
