@@ -160,9 +160,8 @@ class PhoneFormFieldState extends FormFieldState<PhoneNumber> {
 
   TextAlign _computeTextAlign() {
     final directionality = Directionality.of(context);
-    return directionality == TextDirection.ltr
-        ? TextAlign.start
-        : TextAlign.end;
+    return widget.textAlign ??
+        (directionality == TextDirection.ltr ? TextAlign.start : TextAlign.end);
   }
 
   /// returns where the country button is placed in the input
