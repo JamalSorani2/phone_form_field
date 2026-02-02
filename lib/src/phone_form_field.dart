@@ -125,7 +125,6 @@ class PhoneFormField extends FormField<PhoneNumber> {
     this.textInputAction,
     this.style,
     this.strutStyle,
-    @Deprecated('Has no effect, Change text directionality instead')
     this.textAlign,
     this.textAlignVertical,
     this.autofocus = false,
